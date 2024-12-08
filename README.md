@@ -1,77 +1,77 @@
 # My solution to Advent of Code 2024
 
 - Day 1
-    - [X] Part One
-    - [X] Part Two
+  - [x] Part One
+  - [x] Part Two
 - Day 2
-    - [X] Part One
-    - [X] Part Two
+  - [x] Part One
+  - [x] Part Two
 - Day 3
-    - [X] Part One
-    - [X] Part Two
+  - [x] Part One
+  - [x] Part Two
 - Day 4
-    - [X] Part One
-    - [X] Part Two
+  - [x] Part One
+  - [x] Part Two
 - Day 5
-    - [X] Part One
-    - [X] Part Two
+  - [x] Part One
+  - [x] Part Two
 - Day 6
-    - [X] Part One
-    - [X] Part Two
+  - [x] Part One
+  - [x] Part Two
 - Day 7
-    - [ ] Part One
-    - [ ] Part Two
+  - [x] Part One
+  - [x] Part Two
 - Day 8
-    - [ ] Part One
-    - [ ] Part Two
+  - [ ] Part One
+  - [ ] Part Two
 - Day 9
-    - [ ] Part One
-    - [ ] Part Two
+  - [ ] Part One
+  - [ ] Part Two
 - Day 10
-    - [ ] Part One
-    - [ ] Part Two
+  - [ ] Part One
+  - [ ] Part Two
 - Day 11
-    - [ ] Part One
-    - [ ] Part Two
+  - [ ] Part One
+  - [ ] Part Two
 - Day 12
-    - [ ] Part One
-    - [ ] Part Two
+  - [ ] Part One
+  - [ ] Part Two
 - Day 13
-    - [ ] Part One
-    - [ ] Part Two
+  - [ ] Part One
+  - [ ] Part Two
 - Day 14
-    - [ ] Part One
-    - [ ] Part Two
+  - [ ] Part One
+  - [ ] Part Two
 - Day 15
-    - [ ] Part One
-    - [ ] Part Two
+  - [ ] Part One
+  - [ ] Part Two
 - Day 16
-    - [ ] Part One
-    - [ ] Part Two
+  - [ ] Part One
+  - [ ] Part Two
 - Day 17
-    - [ ] Part One
-    - [ ] Part Two
+  - [ ] Part One
+  - [ ] Part Two
 - Day 18
-    - [ ] Part One
-    - [ ] Part Two
+  - [ ] Part One
+  - [ ] Part Two
 - Day 19
-    - [ ] Part One
-    - [ ] Part Two
+  - [ ] Part One
+  - [ ] Part Two
 - Day 20
-    - [ ] Part One
-    - [ ] Part Two
+  - [ ] Part One
+  - [ ] Part Two
 - Day 21
-    - [ ] Part One
-    - [ ] Part Two
+  - [ ] Part One
+  - [ ] Part Two
 - Day 22
-    - [ ] Part One
-    - [ ] Part Two
+  - [ ] Part One
+  - [ ] Part Two
 - Day 23
-    - [ ] Part One
-    - [ ] Part Two
+  - [ ] Part One
+  - [ ] Part Two
 - Day 24
-    - [ ] Part One
-    - [ ] Part Two
+  - [ ] Part One
+  - [ ] Part Two
 - Day 25
-    - [ ] Part One
-    - [ ] Part Two
+  - [ ] Part One
+  - [ ] Part Two
