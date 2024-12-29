@@ -40,8 +40,8 @@
   - [x] Part One
   - [x] Part Two
 - Day 14
-  - [ ] Part One
-  - [ ] Part Two
+  - [x] Part One
+  - [x] Part Two
 - Day 15
   - [ ] Part One
   - [ ] Part Two
