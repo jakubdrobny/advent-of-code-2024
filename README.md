@@ -1,4 +1,4 @@
-# My solution to Advent of Code 2024
+# My solutions to Advent of Code 2024
 
 - Day 1
   - [x] Part One
@@ -46,8 +46,8 @@
   - [x] Part One
   - [x] Part Two
 - Day 16
-  - [ ] Part One
-  - [ ] Part Two
+  - [x] Part One
+  - [x] Part Two
 - Day 17
   - [ ] Part One
   - [ ] Part Two
