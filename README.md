@@ -52,11 +52,11 @@
   - [x] Part One
   - [x] Part Two
 - Day 18
-  - [ ] Part One
-  - [ ] Part Two
+  - [x] Part One
+  - [x] Part Two
 - Day 19
-  - [ ] Part One
-  - [ ] Part Two
+  - [x] Part One
+  - [x] Part Two
 - Day 20
   - [ ] Part One
   - [ ] Part Two
