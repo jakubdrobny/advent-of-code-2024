@@ -49,8 +49,8 @@
   - [x] Part One
   - [x] Part Two
 - Day 17
-  - [ ] Part One
-  - [ ] Part Two
+  - [x] Part One
+  - [x] Part Two
 - Day 18
   - [ ] Part One
   - [ ] Part Two
