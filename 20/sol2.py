@@ -26,7 +26,6 @@ def bfs(sy, sx):
     q = deque()
     q.append((sy, sx))
     dist = [[MAX_INT for _ in range(m)] for _ in range(n)]
-    par = [[(-1, -1) for _ in range(m)] for _ in range(n)]
     dist[sy][sx] = 0
     while q:
         cy, cx = q.popleft()
@@ -38,41 +37,38 @@ def bfs(sy, sx):
                 and ny < n
                 and nx < m
                 and dist[ny][nx] > dist[cy][cx] + 1
-                and g[ny][nx] != "#"
             ):
                 dist[ny][nx] = dist[cy][cx] + 1
-                par[ny][nx] = (cy, cx)
-                q.append((ny, nx))
-    return dist, par
+                if g[ny][nx] != "#":
+                    q.append((ny, nx))
+    return dist
 
 
-dist, par = bfs(si, sj)
-path = [(ei, ej)]
-ci, cj = par[ei][ej]
-while (ci, cj) != (-1, -1):
-    path.append((ci, cj))
-    ci, cj = par[ci][cj]
-
-path.reverse()
-
+ds, de = bfs(si, sj), bfs(ei, ej)
+cheats = set()
 THRESHOLD = 100
-
-normal_way = dist[ei][ej]
-
-ans = set()
-
-for i in range(len(path)):
-    for j in range(i + 1, len(path)):
-        i1, j1 = path[i]
-        i2, j2 = path[j]
-        for di, dj in delta:
-            ni, nj = i1 + di, j1 + dj
-            if g[ni][nj] == "#":
-                d = abs(ni - i2) + abs(nj - j2)
-                if d > 1 and d <= 20:
-                    cheated_way = i + d + (len(path) - j)
-                    saved = normal_way - cheated_way
-                    if saved >= THRESHOLD:
-                        ans.add(tuple(sorted([(i1, j1), (i2, j2)])))
-
-print(len(ans))
+L = 22
+normal_way = ds[ei][ej]
+for a in range(n):
+    for b in range(m):
+        for c in range(max(0, a - L), min(n, a + L)):
+            for d in range(max(0, b - L), min(m, b + L)):
+                if g[a][b] != "#" or g[c][d] == "#":
+                    continue
+                for da, db in [[-1, 0], [1, 0], [0, 1], [0, -1]]:
+                    na, nb = a + da, b + db
+                    cost = abs(na - c) + abs(nb - d)
+                    if (
+                        na >= 0
+                        and nb >= 0
+                        and na < n
+                        and nb < m
+                        and g[na][nb] != "#"
+                        and cost <= 20
+                    ):
+                        cheated_way = ds[na][nb] + cost + de[c][d]
+                        saved = normal_way - cheated_way
+                        if saved >= THRESHOLD:
+                            key = tuple(sorted([(na, nb), (c, d)]))
+                            cheats.add(key)
+print(len(cheats))
