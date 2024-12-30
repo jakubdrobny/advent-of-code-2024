@@ -70,8 +70,8 @@
   - [x] Part One
   - [x] Part Two
 - Day 24
-  - [ ] Part One
+  - [x] Part One
   - [ ] Part Two
 - Day 25
-  - [ ] Part One
+  - [x] Part One
   - [ ] Part Two
