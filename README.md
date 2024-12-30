@@ -58,17 +58,17 @@
   - [x] Part One
   - [x] Part Two
 - Day 20
-  - [ ] Part One
+  - [x] Part One
   - [ ] Part Two
 - Day 21
   - [ ] Part One
   - [ ] Part Two
 - Day 22
-  - [ ] Part One
-  - [ ] Part Two
+  - [x] Part One
+  - [x] Part Two
 - Day 23
-  - [ ] Part One
-  - [ ] Part Two
+  - [x] Part One
+  - [x] Part Two
 - Day 24
   - [ ] Part One
   - [ ] Part Two
