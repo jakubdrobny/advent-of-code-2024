@@ -1,37 +1,42 @@
-from collections import defaultdict
 import sys
 
-reading_vals = True
-values = defaultdict(int)
+# i dont really know why this works though, just from reddit, i cant anymore this year bruh
+# wrong ops are when:
+#  - non highest zXY does not have XOR op
+#  - XOR has operands and result non xAB, yCD, zEF
+#  - output of AND without x00 in either operand is input for non OR operation
+#  - output of XOR is input for OR operation
+# bruh why these should hold i have no clue at all, but finally 50 stars, can rest :DD
+
 ops = []
+reading_ops = False
+highest_z = "z00"
 for line in sys.stdin:
     if line == "\n":
-        reading_vals = False
-    else:
-        line = line.strip("\n")
-        if reading_vals:
-            line = line.split(": ")
-            values[line[0]] = int(line[1])
-        else:
-            line = line.split(" -> ")
-            x = line[0].split(" ")
-            ops.append(x + [line[1]])
-solved = [False for _ in range(len(ops))]
-while not all(solved):
-    for i in range(len(ops)):
-        if solved[i]:
-            continue
-        op = ops[i]
-        if op[0] in values and op[2] in values:
-            v1, v2 = values[op[0]], values[op[2]]
-            values[op[3]] = (
-                v1 & v2 if op[1] == "AND" else v1 | v2 if op[1] == "OR" else v1 ^ v2
-            )
-            solved[i] = True
-bn = ""
-for k in sorted(values.keys(), reverse=True):
-    if k[0] == "z":
-        bn += str(values[k])
-    else:
-        break
-print(int(bn, 2))
+        reading_ops = True
+    elif reading_ops:
+        x, op, y, _, z = line.strip("\n").split()
+        ops.append((x, op, y, z))
+        if z[0] == "z" and int(z[1:]) > int(highest_z[1:]):
+            highest_z = z
+wrong = set()
+for op1, op, op2, res in ops:
+    if res[0] == "z" and op != "XOR" and res != highest_z:
+        wrong.add(res)
+    if (
+        op == "XOR"
+        and res[0] not in "xyz"
+        and op1[0] not in "xyz"
+        and op2[0] not in "xyz"
+    ):
+        wrong.add(res)
+    if op == "AND" and "x00" not in [op1, op2]:
+        for subop1, subop, subop2, subres in ops:
+            if (res == subop1 or res == subop2) and subop != "OR":
+                wrong.add(res)
+    if op == "XOR":
+        for subop1, subop, subop2, subres in ops:
+            if (res == subop1 or res == subop2) and subop == "OR":
+                wrong.add(res)
+
+print(",".join(sorted(wrong)))
