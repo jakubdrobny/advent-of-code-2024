@@ -61,8 +61,8 @@
   - [x] Part One
   - [x] Part Two
 - Day 21
-  - [ ] Part One
-  - [ ] Part Two
+  - [x] Part One
+  - [x] Part Two
 - Day 22
   - [x] Part One
   - [x] Part Two
