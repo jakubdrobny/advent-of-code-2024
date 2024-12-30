@@ -59,7 +59,7 @@
   - [x] Part Two
 - Day 20
   - [x] Part One
-  - [ ] Part Two
+  - [x] Part Two
 - Day 21
   - [ ] Part One
   - [ ] Part Two
